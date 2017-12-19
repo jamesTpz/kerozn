@@ -3,9 +3,11 @@
 namespace App;
 
 use Laravel\Spark\User as SparkUser;
-
-class User extends SparkUser
+use TCG\Voyager\Traits\VoyagerUser;
+use TCG\Voyager\Contracts\User as UserContract;
+class User extends SparkUser implements UserContract
 {
+	use VoyagerUser;
     /**
      * The attributes that are mass assignable.
      *

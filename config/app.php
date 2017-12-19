@@ -166,8 +166,11 @@ return [
         /*
          * Package Service Providers...
          */
-        Laravel\Tinker\TinkerServiceProvider::class,
-
+		Laravel\Tinker\TinkerServiceProvider::class,
+		TCG\Voyager\VoyagerServiceProvider::class,
+		Laravel\Spark\Providers\SparkServiceProvider::class,
+		Laravel\Cashier\CashierServiceProvider::class,
+		App\Providers\SparkServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -176,10 +179,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
 		App\Providers\RouteServiceProvider::class,
-		Laravel\Spark\Providers\SparkServiceProvider::class,
-		Laravel\Cashier\CashierServiceProvider::class,
-		App\Providers\SparkServiceProvider::class,
-
     ],
 
     /*
