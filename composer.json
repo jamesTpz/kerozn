@@ -13,7 +13,9 @@
         "laravel/framework": "5.4.*",
         "laravel/spark": "4.0",
         "laravel/tinker": "1.0",
+        "laravelcollective/html": "^5.4.0",
         "nwidart/laravel-modules": "^2.6",
+        "prettus/l5-repository": "^2.6",
         "tcg/voyager": "^1.0"
     },
     "require-dev": {

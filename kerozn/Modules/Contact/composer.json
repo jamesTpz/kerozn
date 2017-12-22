@@ -1,0 +1,25 @@
+{
+    "name": "jrichard/contact",
+    "description": "",
+    "authors": [
+        {
+            "name": "James Richard",
+            "email": "james@tpz.fr"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kerozn\\Modules\\Contact\\Providers\\ContactServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kerozn\\Modules\\Contact\\": ""
+        }
+    }
+}

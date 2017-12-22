@@ -171,6 +171,9 @@ return [
 		Laravel\Spark\Providers\SparkServiceProvider::class,
 		Laravel\Cashier\CashierServiceProvider::class,
 		App\Providers\SparkServiceProvider::class,
+		Nwidart\Modules\LaravelModulesServiceProvider::class,
+		Prettus\Repository\Providers\RepositoryServiceProvider::class,
+		Collective\Html\HtmlServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -226,7 +229,10 @@ return [
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
+		'View' => Illuminate\Support\Facades\View::class,
+		'Form' => Collective\Html\FormFacade::class,
+		'Html' => Collective\Html\HtmlFacade::class,
+		'Module' => Nwidart\Modules\Facades\Module::class,
 
     ],
 
