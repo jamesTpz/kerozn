@@ -16,6 +16,20 @@
                 
             }
         }
+	},
+	"require": {
+        "php": ">=7.0"
+    },
+	"require-dev": {
+        "laravel/dusk": "^2.0",
+        "phpunit/phpunit": "~6.0"
+    },
+	"autoload-dev": {
+        "psr-4": {
+            "Kerozn\\Modules\\Contact\\Tests\\": "Tests",
+            "Kerozn\\Modules\\Contact\\": ".",
+            "Kerozn\\Modules\\": "Modules/"
+        }
     },
     "autoload": {
         "psr-4": {
